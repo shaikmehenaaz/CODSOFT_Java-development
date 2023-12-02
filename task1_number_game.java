@@ -14,11 +14,14 @@ class task1_number_game{
                 break;
             }
         }
+
     }
     static void num(){
         Scanner sc=new Scanner(System.in);
         Random rd=new Random();
         int comp_num= rd.nextInt(1,100);
+        int user_score=0;
+        int comp_score=0;
         // System.out.println(comp_num);
         for(int i=0;i<5;i++){
         System.out.print("Enter your guess: ");
@@ -29,9 +32,11 @@ class task1_number_game{
             System.out.println("higher than the actual\n");
         }else{
             System.out.println("correct guess\n");
+            user_score++;
             break;
         }
         }
+        System.out.println("user score: "+user_score);
     }
     static void again(String a){
         if(a.equals("yes")){
