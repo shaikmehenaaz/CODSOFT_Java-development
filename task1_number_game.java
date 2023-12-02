@@ -21,7 +21,6 @@ class task1_number_game{
         Random rd=new Random();
         int comp_num= rd.nextInt(1,100);
         int user_score=0;
-        int comp_score=0;
         // System.out.println(comp_num);
         for(int i=0;i<5;i++){
         System.out.print("Enter your guess: ");
